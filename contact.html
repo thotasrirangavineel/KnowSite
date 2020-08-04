@@ -16,6 +16,8 @@
 			TSRV's Site
 		</div>
 		
+		<svg viewBox="11.8 9 16 22" class="mouse"><path d="M20,21l4.5,8l-3.4,2l-4.6-8.1L12,29V9l16,12H20z"></path></svg>
+		
 		<div class="header-nav">
 			<a href="index.html">Home</a>
 			<a href="about.html">About</a>
@@ -49,3 +51,26 @@
 </body>
 
 </html>
+
+<script>
+	const el = document.querySelector('.mouse');
+	let lastMove = 0;
+
+	function onMouseMove (e) {
+	  x = e.clientX;
+	  y = e.clientY;
+	  updateMouse(x, y);
+	  lastMove = Date.now();
+	}
+
+	function updateMouse (x, y) {
+		el.style.transform = `translate(${x}px, ${y}px)`;
+	}
+
+	function render (a) {
+	  requestAnimationFrame(render);
+	}
+
+	window.addEventListener('mousemove', onMouseMove);
+	requestAnimationFrame(render);
+</script>

@@ -2,6 +2,7 @@ html, body{
 	margin: 0px;
 	height: 100%;
 	width: 100%;
+	cursor: none;
 }
 
 header{
@@ -43,6 +44,13 @@ img {
   display: block;
 }
 
+svg {
+  width: 1.28vw;
+  top: 0.1vw;
+  left: 0.1vw;
+  position: fixed;
+}
+
 a:link, a:visited {
 	background-color: #f44336;
 	color: #fff;
@@ -51,10 +59,12 @@ a:link, a:visited {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
+	cursor: none;
 }
 
 .header-nav a:hover, .header-nav a:active {
 	background-color: #63344f;
+	cursor: none;
 }
 
 .header-title{
