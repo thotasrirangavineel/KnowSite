@@ -8,7 +8,7 @@ html, body{
 header{
 	overflow: hidden;
 	background-color: #f44336;
-	height: 7vw;
+	height: 7.2vw;
 	width: 100%;
 	padding: 0.64vw;
 	top: 0px;
@@ -20,7 +20,7 @@ header{
 	header{
 		overflow: hidden;
 		background-color: #f44336;
-		height: 9vw;
+		height: 19vw;
 		width: 100%;
 		padding: 0.64vw;
 		top: 0px;
@@ -59,15 +59,15 @@ img {
 
 svg {
   width: 1.28vw;
-  top: 0.1vw;
-  left: 0.1vw;
+  top: 0.15vw;
+  left: 0.15vw;
   position: fixed;
 }
 
 a:link, a:visited {
 	background-color: #f44336;
 	color: #fff;
-	font-size: 1.28vw;
+	font-size: 1.4vw;
 	padding: 0.64vw 0vw;
 	text-align: center;
 	text-decoration: none;
@@ -92,6 +92,15 @@ a:link, a:visited {
 	margin: 0vw;
 	left: 0px;
 	float: left;
+}
+
+@media only screen and (max-width: 760px){
+	.header-nav a{
+	width: 100%;
+	margin: 0vw;
+	left: 0px;
+	float: left;
+	}
 }
 
 .content-body{
