@@ -10,13 +10,13 @@
 	</title>
 </head>
 
-<body>
+<body style="background-color: black;">
 	<header>
 		<div class="header-title">
 			TSRV's Site
 		</div>
 		
-		<svg viewBox="11.8 9 16 22" class="mouse"><path d="M20,21l4.5,8l-3.4,2l-4.6-8.1L12,29V9l16,12H20z"></path></svg>
+		<svg viewBox="11.8 9 16 22" class="mouse" style="fill: white;" id="svgblock"><path d="M20,21l4.5,8l-3.4,2l-4.6-8.1L12,29V9l16,12H20z"></path></svg>
 		
 		<div class="header-nav">
 			<a href="index.html">Home</a>
@@ -31,7 +31,7 @@
 		<div class="content-title" style="text-align:center">
 			<h2>Coming soon...Till then refer resume<h2>
 		</div>
-		
+		<p id="demo"></p>
 		<div class="content-body">
 		</div>
 	</content>
@@ -61,7 +61,36 @@
 	function render (a) {
 	  requestAnimationFrame(render);
 	}
+	
+	document.body.addEventListener('click', function (e){
+		var self = this;
+			
+		this.style.background = 'white';
+		setTimeout(function(){
+			self.style.background = 'black';
+		}, 200);
+		setTimeout(function(){
+			self.style.background = 'white';
+		}, 800);
+		setTimeout(function(){
+			self.style.background = 'black';
+		}, 400);
+		setTimeout(function(){
+			self.style.background = 'white';
+		}, 1600);
+		setTimeout(function(){
+			self.style.background = 'black';
+		}, 300);
+		setTimeout(function(){
+			self.style.background = 'white';
+		}, 800);
+		setTimeout(function(){
+			self.style.background = 'black';
+		}, 400);
+		document.getElementById('svgblock').style.fill = 'black';
+	});
 
 	window.addEventListener('mousemove', onMouseMove);
+	
 	requestAnimationFrame(render);
 </script>
