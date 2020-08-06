@@ -20,7 +20,7 @@ header{
 	header{
 		overflow: hidden;
 		background-color: #f44336;
-		height: 19vw;
+		height: 25vw;
 		width: 100%;
 		padding: 0.64vw;
 		top: 0px;
@@ -75,6 +75,19 @@ a:link, a:visited {
 	cursor: none;
 }
 
+@media only screen and (max-width: 760px){
+	a:link, a:visited {
+		background-color: #f44336;
+		color: #fff;
+		font-size: 2vw;
+		padding: 0.64vw 0vw;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		cursor: none;
+	}
+}
+
 .header-nav a:hover, .header-nav a:active {
 	background-color: #63344f;
 	cursor: none;
@@ -85,6 +98,15 @@ a:link, a:visited {
 	font-family: serif;
 	color: #fff;
 	text-align: center;
+}
+
+@media only screen and (max-width: 760px){
+	.header-title{
+		font-size: 5vw;
+		font-family: serif;
+		color: #fff;
+		text-align: center;
+	}
 }
 
 .header-nav a{
