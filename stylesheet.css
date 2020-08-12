@@ -1,27 +1,28 @@
 html, body{
 	margin: 0px;
-	height: 100%;
-	max-width: 100%;
-    overflow-x: hidden;
+	max-width: 99.36%;
 	cursor: none;
 }
 
-header{
-	overflow: hidden;
-	background-color: #f44336;
-	height: 7.2vw;
-	width: 100%;
-	padding: 0.64vw;
-	top: 0;
-	left: 0;
-	display: inline-block;
-}
-
-@media only screen and (max-width: 760px){
+@media screen and (orientation: landscape)
+{
 	header{
 		overflow: hidden;
 		background-color: #f44336;
-		height: 28vw;
+		height: 7.2vw;
+		width: 100%;
+		padding: 0.64vw;
+		top: 0;
+		left: 0;
+		display: inline-block;
+	}
+}
+
+@media only screen and (orientation:portrait){
+	header{
+		overflow: hidden;
+		background-color: #f44336;
+		height: 52vw;
 		width: 100%;
 		padding: 0.64vw;
 		top: 0;
@@ -33,13 +34,13 @@ header{
 content{
 	display: inline-block;
 	width: 100%;
-	padding-bottom: 3vw;
+	padding-bottom: 5vw;
 }
 
 footer{
 	position: relative;
 	background-color: #f44336;
-	height: 1.92vw;
+	height: 2vw;
 	width: 100%;
 	bottom: 0vw;
 	margin-top: -1.92vw;
@@ -47,6 +48,13 @@ footer{
 	font-size: 1.28vw;
 	padding: 0.32vw;
 	color: #fff;
+}
+
+@media only screen and (orientation:portrait){
+	footer{
+		font-size: 3.2vw;
+		height: 5vw;
+	}
 }
 
 img {
@@ -65,23 +73,26 @@ svg {
   position: fixed;
 }
 
-a:link, a:visited {
-	background-color: #f44336;
-	color: #fff;
-	font-size: 1.4vw;
-	padding: 0.64vw 0vw;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	cursor: none;
-}
-
-@media only screen and (max-width: 760px){
+@media screen and (orientation:landscape)
+{
 	a:link, a:visited {
 		background-color: #f44336;
 		color: #fff;
-		font-size: 2vw;
+		font-size: 1.4vw;
 		padding: 0.64vw 0vw;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		cursor: none;
+	}
+}
+
+@media only screen and (orientation:portrait){
+	a:link, a:visited {
+		background-color: #f44336;
+		color: #fff;
+		font-size: 2.8vw;
+		padding: 1.28vw 0vw;
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
@@ -94,34 +105,38 @@ a:link, a:visited {
 	cursor: none;
 }
 
-.header-title{
-	font-size: 4vw;
-	font-family: serif;
-	color: #fff;
-	text-align: center;
-}
-
-@media only screen and (max-width: 760px){
+@media screen and (orientation:landscape)
+{
 	.header-title{
-		font-size: 5vw;
+		font-size: 4vw;
 		font-family: serif;
 		color: #fff;
 		text-align: center;
 	}
 }
 
-.header-nav a{
-	width: 19.8%;
-	margin: 0vw;
-	left: 0.1%;
-	right: 0.1%;
-	float: left;
+@media only screen and (orientation:portrait){
+	.header-title{
+		font-size: 8vw;
+		font-family: serif;
+		color: #fff;
+		text-align: center;
+	}
 }
 
-@media only screen and (max-width: 760px){
+@media screen and (orientation:landscape)
+{
+	.header-nav a{
+		width: 19.8%;
+		margin: 0.1%;
+		float: left;
+	}
+}
+
+@media only screen and (orientation:portrait){
 	.header-nav a{
 	width: 100%;
-	margin: 0.2vw;
+	margin: 1vw;
 	left: 0;
 	float: left;
 	}
