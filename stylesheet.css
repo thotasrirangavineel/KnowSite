@@ -4,6 +4,13 @@ html, body{
 	cursor: none;
 }
 
+@media screen and (max-width: 760px)
+{
+	html, body{
+		cursor: default;
+	}
+}
+
 header{
 		height: 7.2vw;
 }
@@ -22,10 +29,10 @@ header{
 	}
 }
 
-@media screen and (max-width: 600px) and (orientation: landscape)
+@media screen and (max-width: 760px) and (orientation: landscape)
 {
 	header{
-		height: 7.7vw;
+		height: 8.2vw;
 	}
 }
 
@@ -84,6 +91,13 @@ svg {
   position: fixed;
 }
 
+@media screen and (max-width: 760px)
+{
+	svg {
+	  display: none;
+	}
+}
+
 @media screen and (orientation:landscape)
 {
 	a:link, a:visited {
@@ -111,9 +125,23 @@ svg {
 	}
 }
 
+@media screen and (max-width: 760px)
+{
+	a:link, a:visited {
+		cursor: default;
+	}
+}
+
 .header-nav a:hover, .header-nav a:active {
 	background-color: #63344f;
 	cursor: none;
+}
+
+@media screen and (max-width: 760px)
+{
+	.header-nav a:hover, .header-nav a:active {
+		cursor: default;
+	}
 }
 
 @media screen and (orientation:landscape)
