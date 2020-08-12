@@ -4,6 +4,10 @@ html, body{
 	cursor: none;
 }
 
+header{
+		height: 7.2vw;
+}
+
 @media screen and (orientation: landscape)
 {
 	header{
@@ -15,6 +19,13 @@ html, body{
 		top: 0;
 		left: 0;
 		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape)
+{
+	header{
+		height: 7.7vw;
 	}
 }
 
