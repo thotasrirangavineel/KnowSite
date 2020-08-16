@@ -51,29 +51,9 @@
 	<footer>
 		Thank you for visiting and I hope that what you found here pleased you.
 	</footer>
+	<audio id="click-audio" src="../ThunderClap.mp3" type="audio/mpeg"></audio>
 </body>
 
 </html>
 
-<script>
-	const el = document.querySelector('.mouse');
-	let lastMove = 0;
-
-	function onMouseMove (e) {
-	  x = e.clientX;
-	  y = e.clientY;
-	  updateMouse(x, y);
-	  lastMove = Date.now();
-	}
-
-	function updateMouse (x, y) {
-		el.style.transform = `translate(${x}px, ${y}px)`;
-	}
-
-	function render (a) {
-	  requestAnimationFrame(render);
-	}
-
-	window.addEventListener('mousemove', onMouseMove);
-	requestAnimationFrame(render);
-</script>
+<script src="../commonScript.js"></script>

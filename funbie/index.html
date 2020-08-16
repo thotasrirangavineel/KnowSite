@@ -28,7 +28,7 @@
 	</header>
 	
 	<content>
-		<div class="content-title" style="text-align:center">
+		<div class="content-title" style="text-align:center; color: white;">
 			<h2>Coming soon...Till then refer resume<h2>
 		</div>
 		<p id="demo"></p>
@@ -36,61 +36,12 @@
 		</div>
 	</content>
 	
-	<footer>
-		Thank you for visiting and I hope that what you found here pleased you.
+	<footer style="position: fixed;">
+			Thank you for visiting and I hope that what you found here pleased you.
 	</footer>
+	<audio id="click-audio" src="../ThunderClap.mp3" type="audio/mpeg"></audio>
 </body>
 
 </html>
 
-<script>
-	const el = document.querySelector('.mouse');
-	let lastMove = 0;
-
-	function onMouseMove (e) {
-	  x = e.clientX;
-	  y = e.clientY;
-	  updateMouse(x, y);
-	  lastMove = Date.now();
-	}
-
-	function updateMouse (x, y) {
-		el.style.transform = `translate(${x}px, ${y}px)`;
-	}
-
-	function render (a) {
-	  requestAnimationFrame(render);
-	}
-	
-	document.body.addEventListener('click', function (e){
-		var self = this;
-			
-		this.style.background = 'white';
-		setTimeout(function(){
-			self.style.background = 'black';
-		}, 200);
-		setTimeout(function(){
-			self.style.background = 'white';
-		}, 800);
-		setTimeout(function(){
-			self.style.background = 'black';
-		}, 400);
-		setTimeout(function(){
-			self.style.background = 'white';
-		}, 1600);
-		setTimeout(function(){
-			self.style.background = 'black';
-		}, 300);
-		setTimeout(function(){
-			self.style.background = 'white';
-		}, 800);
-		setTimeout(function(){
-			self.style.background = 'black';
-		}, 400);
-		document.getElementById('svgblock').style.fill = 'black';
-	});
-
-	window.addEventListener('mousemove', onMouseMove);
-	
-	requestAnimationFrame(render);
-</script>
+<script src="../commonScript.js"></script>
