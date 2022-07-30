@@ -4,19 +4,9 @@
 
    <url>
 
-      <loc>https://www.tsrv.ml/</loc>
+      <loc>https://www.tsrv.site/</loc>
 
-      <lastmod>2020-08-12</lastmod>
-
-      <changefreq>daily</changefreq>
-
-   </url>
-   
-   <url>
-
-      <loc>https://www.tsrv.ml/contact/</loc>
-
-      <lastmod>2020-08-12</lastmod>
+      <lastmod>2022-07-30</lastmod>
 
       <changefreq>daily</changefreq>
 
@@ -24,19 +14,9 @@
    
    <url>
 
-      <loc>https://www.tsrv.ml/funbie/</loc>
+      <loc>https://www.tsrv.site/contact/</loc>
 
-      <lastmod>2020-08-12</lastmod>
-
-      <changefreq>daily</changefreq>
-
-   </url>
-   
-   <url>
-
-      <loc>https://www.tsrv.ml/about/</loc>
-
-      <lastmod>2020-08-12</lastmod>
+      <lastmod>2022-07-30</lastmod>
 
       <changefreq>daily</changefreq>
 
@@ -44,9 +24,29 @@
    
    <url>
 
-      <loc>https://www.tsrv.ml/resume/</loc>
+      <loc>https://www.tsrv.site/funbie/</loc>
 
-      <lastmod>2020-08-12</lastmod>
+      <lastmod>2022-07-30</lastmod>
+
+      <changefreq>daily</changefreq>
+
+   </url>
+   
+   <url>
+
+      <loc>https://www.tsrv.site/about/</loc>
+
+      <lastmod>2022-07-30</lastmod>
+
+      <changefreq>daily</changefreq>
+
+   </url>
+   
+   <url>
+
+      <loc>https://www.tsrv.site/resume/</loc>
+
+      <lastmod>2022-07-30</lastmod>
 
       <changefreq>daily</changefreq>
 
